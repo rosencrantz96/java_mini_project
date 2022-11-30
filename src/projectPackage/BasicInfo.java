@@ -3,7 +3,7 @@ package projectPackage;
 
 public class BasicInfo extends ShowAllTitles {
 	//필드
-	int titleNo;
+	int titleNo; 
 	String title;
 	String mainChar;
 	String writer;
