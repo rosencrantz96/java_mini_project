@@ -3,13 +3,14 @@ package projectPackage;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class HarryPotterEx {
 	
 	private static ArrayList<BasicInfo> information = new ArrayList<BasicInfo>();
 	private static ArrayList<BasicInfo> information2 = new ArrayList<BasicInfo>();
 	
 	private static ArrayList<Novels> findNovelInfo = new ArrayList<Novels>();
-	private static ArrayList<Movies> findmovieInfo = new ArrayList<Movies>();
+	private static ArrayList<Movies> findMovieInfo = new ArrayList<Movies>();
 	
 	private static Scanner scanner = new Scanner(System.in);
 	
@@ -66,14 +67,14 @@ public class HarryPotterEx {
 		mhp7.director = "데이비드 예이츠";
 		mhp8.director = "데이비드 예이츠";
 		
-		findmovieInfo.add(mhp1);
-		findmovieInfo.add(mhp2);
-		findmovieInfo.add(mhp3);
-		findmovieInfo.add(mhp4);
-		findmovieInfo.add(mhp5);
-		findmovieInfo.add(mhp6);
-		findmovieInfo.add(mhp7);
-		findmovieInfo.add(mhp8);
+		findMovieInfo.add(mhp1);
+		findMovieInfo.add(mhp2);
+		findMovieInfo.add(mhp3);
+		findMovieInfo.add(mhp4);
+		findMovieInfo.add(mhp5);
+		findMovieInfo.add(mhp6);
+		findMovieInfo.add(mhp7);
+		findMovieInfo.add(mhp8);
 		
 		BasicInfo basicInfo1 = new Novels(1, "마법사의 돌");
 		BasicInfo basicInfo2 = new Novels(2, "비밀의 방");
@@ -144,7 +145,7 @@ public class HarryPotterEx {
 					System.out.println("");
 				} else if (selectNo3 == 2) {
 					System.out.println("");
-					findmovieInfoAll();
+					findMovieInfoAll();
 					System.out.println("");
 				} 
 			} else if (selectNo == 4) {
@@ -155,8 +156,8 @@ public class HarryPotterEx {
 		System.out.println("프로그램 종료");
 	}
 
-	private static void findmovieInfoAll() {
-		for(Movies movies : findmovieInfo) {
+	private static void findMovieInfoAll() {
+		for(Movies movies : findMovieInfo) {
 			System.out.println(movies.findWorks());
 		}
 	}
